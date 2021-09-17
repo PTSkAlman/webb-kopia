@@ -1,0 +1,54 @@
+.card-group {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    width: 16rem;
+    border-radius: 8px;
+
+    &>img {
+        max-width: 16rem;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        &:hover {
+            transform: scale(1.5);
+        }
+    }
+
+    &>h1 {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    &-button-news {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        padding: 0.5rem;
+        background-color: red;
+        border: none;
+        color: white;
+        font-weight: 600;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &-button-read {
+        position: relative;
+        background-color: rgb(235, 235, 235);
+        border: none;
+        color: black;
+        font-weight: 500;
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+
+    &-footer {
+        margin: 1.5rem;
+    }
+}
