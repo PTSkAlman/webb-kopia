@@ -92,13 +92,21 @@ select {
   width: 16rem;
   border-radius: 8px;
 }
-.card > img {
-  max-width: 16rem;
+.card-img-wrapper {
+  display: inline-block;
+  overflow: hidden;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-.card > img:hover {
-  transform: scale(1.5);
+.card-img-wrapper > img {
+  max-width: 16rem;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  transition: transform 0.2s;
+}
+.card-img-wrapper > img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 .card > h1 {
   font-size: 1.5rem;
