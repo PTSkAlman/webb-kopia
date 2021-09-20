@@ -1,0 +1,44 @@
+.nav {
+    width: 100%;
+    display: flex;
+
+    &>img {
+        max-width: 8rem;
+    }
+    
+    &-inner {
+        width: 100%;
+        display: flex;
+        vertical-align: middle;
+
+        &>ul {
+            list-style: none;
+        }
+
+        &-ul {
+            width: 50%;
+            justify-content: center;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            &>li {
+                &>a {
+                    text-decoration: none;
+                    color: black;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    &-inner-lang {
+        display: flex;
+
+        &>li:hover {
+            text-decoration: underline;
+        }
+    }
+}
